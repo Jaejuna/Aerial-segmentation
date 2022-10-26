@@ -1,0 +1,21 @@
+[i] ResNeSt101@Puzzle@optimal
+
+[i] mean values is [0.485, 0.456, 0.406]
+[i] std values is [0.229, 0.224, 0.225]
+[i] The number of class is 20
+[i] train_transform is Compose(
+    <tools.ai.augment_utils.RandomResize object at 0x7f95c6248ad0>
+    <tools.ai.augment_utils.RandomHorizontalFlip object at 0x7f95c6248a90>
+    <tools.ai.augment_utils.Normalize object at 0x7f95c6248b10>
+    <tools.ai.augment_utils.RandomCrop object at 0x7f95c624f0d0>
+    <tools.ai.augment_utils.Transpose object at 0x7f95c624f950>
+)
+[i] test_transform is Compose(
+    <tools.ai.augment_utils.Normalize_For_Segmentation object at 0x7f95c624f9d0>
+    <tools.ai.augment_utils.Top_Left_Crop_For_Segmentation object at 0x7f95c624fa10>
+    <tools.ai.augment_utils.Transpose_For_Segmentation object at 0x7f95c624fa50>
+)
+
+[i] log_iteration : 33
+[i] val_iteration : 330
+[i] max_iteration : 4,950
