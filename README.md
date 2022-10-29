@@ -17,6 +17,7 @@ Applying models
   - https://hyunlee103.tistory.com/57`
   - https://medium.com/@msmapark2/u-net-논문-리뷰-u-net-convolutional-networks-for-biomedical-image-segmentation-456d6901b28a
   - https://dacon.io/codeshare/4245?dtype=recent
+  - https://junstar92.tistory.com/151
 
 - CAM : 'Learning Deep Features for Discriminative Localization' - Bolei Zhou et al., 2015
   - https://junstar92.tistory.com/152
