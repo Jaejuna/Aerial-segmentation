@@ -18,7 +18,7 @@ Applying models
   - https://medium.com/@msmapark2/u-net-논문-리뷰-u-net-convolutional-networks-for-biomedical-image-segmentation-456d6901b28a
   - https://dacon.io/codeshare/4245?dtype=recent
   - https://junstar92.tistory.com/151
-
+- PSPnet : https://medium.com/analytics-vidhya/semantic-segmentation-in-pspnet-with-implementation-in-keras-4843d05fc025
 - CAM : 'Learning Deep Features for Discriminative Localization' - Bolei Zhou et al., 2015
   - https://junstar92.tistory.com/152
 - etc
