@@ -2,11 +2,20 @@
 Making an aerial image segmentation model
 
 ### Main task
-Data process
+Datasets : aerial images of cityscapes
+
+Data preprocess
+- classifying changed ones and unchanged ones 
+  - then applying CAM..?
 
 Applying models
 
-### ref
+
+
+### requirements
+python3 -m pip install -r requirements.txt
+
+## ref
 - RS+EPM : https://github.com/OFRIN/RecurSeed_and_EdgePredictMix
 - PPC : https://github.com/usr922/wseg
 - RCA : https://github.com/maeve07/rca
