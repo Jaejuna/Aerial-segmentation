@@ -1,17 +1,17 @@
 # Aerial-segmentation
-AI Connect 2022 국방 AI 경진대회 제 1회 (군 장병 부문)
+ 제 1회 2022 국방 AI 경진대회 (군 장병 부문), AI Connect
 
+Team : 지능보호 <br/>
 Assignment : Making an aerial image segmentation model comparing with serial datas and weakily supervised labels 
-https://aiconnect.kr/competition/detail/214
+Assignment URL : https://aiconnect.kr/competition/detail/214
 
 ## Main task
 ### To Do
-<<<<<<< HEAD
- - 데이터 증강 통해 학습 데이터를 늘려야 함. V
-  ○ 이미지의 각도 변경하기 V
-  ○ RGB값 변경 또는 사진 반전(negative effect) 주어 색 변경하기 V
+ - 데이터 증강 통해 학습 데이터를 늘려야 함. V <br/>
+  ○ 이미지의 각도 변경하기 V <br/>
+  ○ RGB값 변경 또는 사진 반전(negative effect) 주어 색 변경하기 V <br/>
   
- - train model 테스트해보며 miou값 비교하기
+ - train model 테스트해보며 miou값 비교하기 <br/>
   ○ Unet / PSPnet / FPN :: Epoch 또는 Train Size 변경해가며 추가 비교 필요. 특히 Unet V
   
  - Dropout 적용하기 >> train.py에 적용해야합니다. how to ? V
@@ -48,8 +48,8 @@ file path만 (압축파일명).zip으로 바꿔서 제출하시면 됩니다.
 python3 -m pip install -r requirements.txt
 
 ### Summary
-![Public 최종 순위](/workspace/Aerial-segmentation/images/Public 순위.png)
-![제출 결과](/workspace/Aerial-segmentation/images/제출 결과.png)
+<img src="/images/Public 순위.png"></img><br/>
+<img src="/images/제출 결과.png"></img>
 
 배운 것도 많고 부족한 것도 많이 느낀 공모전.
 
@@ -57,7 +57,7 @@ python3 -m pip install -r requirements.txt
 
 하지만 성장했고, 더 준비한다면 다음에는 더 좋은 결과가 있을 것 같다.
 
-Thanks to [Ssogari][https://github.com/ssogari-dev]
+Thanks to [Ssogari](https://github.com/ssogari-dev)
 
 ## ref in container
  - Models
@@ -80,9 +80,6 @@ Thanks to [Ssogari][https://github.com/ssogari-dev]
   
   - papers
    -  https://arxiv.org/pdf/1802.02611v3.pdf
-
-  - SMP library
-   https://smp.readthedocs.io/en/latest/
 
 ## ref
 - RS+EPM : https://github.com/OFRIN/RecurSeed_and_EdgePredictMix
