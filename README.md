@@ -1,11 +1,12 @@
 # Aerial-segmentation
 AI Connect 2022 국방 AI 경진대회 제 1회 (군 장병 부문)
 
-Assignment : Making an aerial image segmentation model comparing with serial datas
+Assignment : Making an aerial image segmentation model comparing with serial datas and weakily supervised labels 
 https://aiconnect.kr/competition/detail/214
 
 ## Main task
 ### To Do
+<<<<<<< HEAD
  - 데이터 증강 통해 학습 데이터를 늘려야 함. V
   ○ 이미지의 각도 변경하기 V
   ○ RGB값 변경 또는 사진 반전(negative effect) 주어 색 변경하기 V
@@ -27,7 +28,7 @@ https://aiconnect.kr/competition/detail/214
  8. MAnet / 0.8 / 5 - (0.47)
  9. FPN / 0.8 / 5 - (0.53)
  10. DeepLabV3Plus / 0.8 / 5 - 기본 제공 데이터로 학습 후 게시 (0.66) - 현재 TOP
-11. DeepLabV3+_GDLoss / 0.8 / 5 - 기본 제공 데이터로 학습 후 게시 (0.42)
+ 11. DeepLabV3+_GDLoss / 0.8 / 5 - 기본 제공 데이터로 학습 후 게시 (0.42)
  12. DeepLabV3+_4depths / 0.8 / 4 - 깊이를 4로 줄이기 (유사 드롭아웃), 기본 제공 데이터로 학습 후 게시 (0.65)
  13. DeepLabV3+_withAugData / 0.8 / 5 - 데이터 증강후 학습 했지만 시간이 없어 끊고 게시 (0.64)
  
@@ -43,7 +44,7 @@ file path만 (압축파일명).zip으로 바꿔서 제출하시면 됩니다.
  _ 폴더 명을 '학습모델명'으로 변경해주십시오.
  _ predict.yaml에서 train model을 폴더 명으로 변경하여 주십시오
 
-### requirements
+## requirements
 python3 -m pip install -r requirements.txt
 
 ### Summary
@@ -60,24 +61,25 @@ Thanks to [Ssogari][https://github.com/ssogari-dev]
 
 ## ref in container
  - Models
- https://github.com/dmMaze/UNet3Plus-pytorch
- https://paperswithcode.com/paper/unet-3-a-full-scale-connected-unet-for
- https://wandb.ai/wandb_fc/korean/reports/---VmlldzoxNDI4NzEy
- https://paperswithcode.com/paper/resattunet-detecting-marine-debris-using-an
- https://www.kaggle.com/code/hsuyuhao/deeplabv3-plus
- https://www.kaggle.com/code/balraj98/deeplabv3-resnet101-for-segmentation-pytorch
- https://github.com/jfzhang95/pytorch-deeplab-xception (DeepLabV3+)
+   - https://smp.readthedocs.io/en/latest/ (SMP)
+   - https://github.com/dmMaze/UNet3Plus-pytorch
+   - https://paperswithcode.com/paper/unet-3-a-full-scale-connected-unet-for
+   - https://wandb.ai/wandb_fc/korean/reports/---VmlldzoxNDI4NzEy
+   - https://paperswithcode.com/paper/resattunet-detecting-marine-debris-using-an
+   - https://www.kaggle.com/code/hsuyuhao/deeplabv3-plus
+   - https://www.kaggle.com/code/balraj98/deeplabv3-resnet101-for-segmentation-pytorch
+   - https://github.com/jfzhang95/pytorch-deeplab-xception (DeepLabV3+)
  
 - Overfitting
- https://www.kaggle.com/code/phoenigs/u-net-dropout-augmentation-stratification/notebook#Data-augmentation
- https://gaussian37.github.io/dl-pytorch-snippets/
- https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html
+   - https://www.kaggle.com/code/phoenigs/u-net-dropout-augmentation-stratification/notebook#Data-augmentation
+   - https://gaussian37.github.io/dl-pytorch-snippets/
+   - https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html
  
  - Loss function
-  https://www.kaggle.com/code/sungjunghwan/loss-function-of-image-segmentation
+    - https://www.kaggle.com/code/sungjunghwan/loss-function-of-image-segmentation
   
   - papers
-  https://arxiv.org/pdf/1802.02611v3.pdf
+   -  https://arxiv.org/pdf/1802.02611v3.pdf
 
   - SMP library
    https://smp.readthedocs.io/en/latest/
