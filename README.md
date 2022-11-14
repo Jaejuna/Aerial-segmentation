@@ -1,23 +1,22 @@
 # Aerial-segmentation
-Making an aerial image segmentation model
+AI Connect 2022 국방 AI 경진대회 제 1회 (군 장병 부문)
+
+Assignment : Making an aerial image segmentation model comparing with serial datas
 https://aiconnect.kr/competition/detail/214
 
 ## Main task
 ### To Do
- - 데이터 증강 통해 학습 데이터를 늘려야 함.
-  ○ 이미지의 각도 변경하기
-  ○ RGB값 변경 또는 사진 반전(negative effect) 주어 색 변경하기
-  ○ 이미지 자르기 (1/4 ~ 1/2씩 blank 처리)
-  ○ 
+ - 데이터 증강 통해 학습 데이터를 늘려야 함. V
+  ○ 이미지의 각도 변경하기 V
+  ○ RGB값 변경 또는 사진 반전(negative effect) 주어 색 변경하기 V
   
  - train model 테스트해보며 miou값 비교하기
-  ○ Unet / PSPnet / FPN :: Epoch 또는 Train Size 변경해가며 추가 비교 필요. 특히 Unet
-  ○ 
+  ○ Unet / PSPnet / FPN :: Epoch 또는 Train Size 변경해가며 추가 비교 필요. 특히 Unet V
   
- - Dropout 적용하기 >> train.py에 적용해야합니다. how to ?
+ - Dropout 적용하기 >> train.py에 적용해야합니다. how to ? V
 
 ### Test Case
-  제출한 후 제출 순서, 오류 내용, 설정 값을 정리하여 주십시오.
+  제출해본 결과들 
  1. Compress Error - 압축 오류로 인해 빈 파일이 업로드됨
  2. File Not Enough - 채점 간 비교 대상 파일의 부족으로 인한 오류
  3. Sample File Submit - 샘플용으로 제공된 파일을 업로드함 (테스트용, 0.24)
@@ -28,29 +27,36 @@ https://aiconnect.kr/competition/detail/214
  8. MAnet / 0.8 / 5 - (0.47)
  9. FPN / 0.8 / 5 - (0.53)
  10. DeepLabV3Plus / 0.8 / 5 - 기본 제공 데이터로 학습 후 게시 (0.66) - 현재 TOP
- 
- 
- 
-### 학습(train) 완료 후에는 
- _ 폴더 명을 '학습모델명'으로 변경해주십시오.
- _ predict.yaml에서 train model을 폴더 명으로 변경하여 주십시오
- 
- https://smp.readthedocs.io/en/latest/
- 
+11. DeepLabV3+_GDLoss / 0.8 / 5 - 기본 제공 데이터로 학습 후 게시 (0.42)
+ 12. DeepLabV3+_4depths / 0.8 / 4 - 깊이를 4로 줄이기 (유사 드롭아웃), 기본 제공 데이터로 학습 후 게시 (0.65)
+ 13. DeepLabV3+_withAugData / 0.8 / 5 - 데이터 증강후 학습 했지만 시간이 없어 끊고 게시 (0.64)
  
 ## Convention 
 ### 압축 파일 제작 방법
-
 1. cd 명령어로 'predict' 대상 폴더 > mask로 들어감
 2. zip (압축파일명).zip ./*
-끝
 
 업로드 시에 과제제출란에 있는 curl 링크 가져와서
 file path만 (압축파일명).zip으로 바꿔서 제출하시면 됩니다.
 
+### 학습(train) 완료 후에는 
+ _ 폴더 명을 '학습모델명'으로 변경해주십시오.
+ _ predict.yaml에서 train model을 폴더 명으로 변경하여 주십시오
 
 ### requirements
 python3 -m pip install -r requirements.txt
+
+### Summary
+![Public 최종 순위](/workspace/Aerial-segmentation/images/Public 순위.png)
+![제출 결과](/workspace/Aerial-segmentation/images/제출 결과.png)
+
+배운 것도 많고 부족한 것도 많이 느낀 공모전.
+
+리눅스 개발 환경, CUDA, 알고리즘, 딥러닝 자체에 대한 직관력과 통찰력 모두 부족했다.
+
+하지만 성장했고, 더 준비한다면 다음에는 더 좋은 결과가 있을 것 같다.
+
+Thanks to [Ssogari][https://github.com/ssogari-dev]
 
 ## ref in container
  - Models
@@ -62,7 +68,6 @@ python3 -m pip install -r requirements.txt
  https://www.kaggle.com/code/balraj98/deeplabv3-resnet101-for-segmentation-pytorch
  https://github.com/jfzhang95/pytorch-deeplab-xception (DeepLabV3+)
  
- 
 - Overfitting
  https://www.kaggle.com/code/phoenigs/u-net-dropout-augmentation-stratification/notebook#Data-augmentation
  https://gaussian37.github.io/dl-pytorch-snippets/
@@ -73,6 +78,9 @@ python3 -m pip install -r requirements.txt
   
   - papers
   https://arxiv.org/pdf/1802.02611v3.pdf
+
+  - SMP library
+   https://smp.readthedocs.io/en/latest/
 
 ## ref
 - RS+EPM : https://github.com/OFRIN/RecurSeed_and_EdgePredictMix
